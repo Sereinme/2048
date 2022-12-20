@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be4568c8-783c-41fb-a89d-fdbbc174b20f" name="变更" comment="Game class">
-      <change afterPath="$PROJECT_DIR$/src/DrawUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tile.java" afterDir="false" />
+    <list default="true" id="be4568c8-783c-41fb-a89d-fdbbc174b20f" name="变更" comment="Tile and draw">
+      <change afterPath="$PROJECT_DIR$/src/Direction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GameBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Keyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Keyboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +57,20 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="game2048" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
@@ -64,7 +81,7 @@
       <updated>1671507623876</updated>
       <workItem from="1671507625691" duration="4644000" />
       <workItem from="1671527304688" duration="76000" />
-      <workItem from="1671527392796" duration="6022000" />
+      <workItem from="1671527392796" duration="11900000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1671507682183</created>
@@ -80,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671515233962</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Tile and draw">
+      <created>1671537355500</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671537355500</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +124,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init" />
     <MESSAGE value="Game class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Game class" />
+    <MESSAGE value="Tile and draw" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tile and draw" />
   </component>
 </project>

@@ -8,13 +8,13 @@ public class Tile {
     public static final int WIDTH = 80;
     public static final int HEIGHT = 80;
     public static final int SLIDE_SPEED = 20;
-    public static final int ARC_WIDTH = 15;
-    public static final int ARC_HEIGHT = 15;
+    public static final int ARC_WIDTH = 0;
+    public static final int ARC_HEIGHT = 0;
 
     // private variables
     private int value;
     private BufferedImage tileImage;
-    private Color background = new Color(0xedc22e);
+    private Color background;
     private Color text;
     private Font font;
     private int x;
