@@ -11,7 +11,7 @@ public class Game extends JPanel implements KeyListener,Runnable {
     private static final long serialVersionUID = 1L;
     public static final int WIDTH = 400;
     public static final int HEIGHT = 630;
-    public static final Font main = new Font("Comic Sans MS", Font.PLAIN, 28);
+    public static final Font main = new Font("Times New Romans", Font.BOLD, 28);
     private Thread game;
     private boolean running;
     private BufferedImage image = new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_INT_RGB);
