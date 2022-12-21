@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be4568c8-783c-41fb-a89d-fdbbc174b20f" name="变更" comment="game logic move">
+    <list default="true" id="be4568c8-783c-41fb-a89d-fdbbc174b20f" name="变更" comment="Add animation">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Keyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Keyboard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tile.java" afterDir="false" />
     </list>
@@ -81,7 +84,8 @@
       <workItem from="1671527304688" duration="76000" />
       <workItem from="1671527392796" duration="17902000" />
       <workItem from="1671555162099" duration="220000" />
-      <workItem from="1671601628601" duration="5179000" />
+      <workItem from="1671601628601" duration="21396000" />
+      <workItem from="1671628044681" duration="5341000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1671507682183</created>
@@ -118,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671603949545</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Game finish without animation">
+      <created>1671609545118</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671609545118</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +152,8 @@
     <MESSAGE value="Tile and draw" />
     <MESSAGE value="Game board" />
     <MESSAGE value="game logic move" />
-    <option name="LAST_COMMIT_MESSAGE" value="game logic move" />
+    <MESSAGE value="Game finish without animation" />
+    <MESSAGE value="Add animation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add animation" />
   </component>
 </project>

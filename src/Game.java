@@ -10,7 +10,7 @@ public class Game extends JPanel implements KeyListener,Runnable {
     @Serial
     private static final long serialVersionUID = 1L;
     public static final int WIDTH = 400;
-    public static final int HEIGHT = 630;
+    public static final int HEIGHT = 530;
     public static final Font main = new Font("Times New Romans", Font.BOLD, 28);
     private Thread game;
     private boolean running;
@@ -30,15 +30,22 @@ public class Game extends JPanel implements KeyListener,Runnable {
     }
 
     public void update() {
+        if (board.won || board.dead) {
+            if (Keyboard.typed(KeyEvent.VK_ESCAPE)) {
+                board = new GameBoard(WIDTH / 2 - GameBoard.BOARD_WIDTH / 2, HEIGHT - GameBoard.BOARD_HEIGHT - 10);
+
+            }
+        }
         board.update();
         Keyboard.update();
     }
 
     public void render() {
         Graphics2D g = (Graphics2D) image.getGraphics();
-        g.setColor(new Color(36,32,11,75));
+        Color back = new Color(36,32,11);
+        g.setColor(back);
         g.fillRect(0,0,WIDTH,HEIGHT);
-        board.render(g);
+        board.render(g, back);
         g.dispose();
 
         Graphics2D g2d = (Graphics2D) getGraphics();
