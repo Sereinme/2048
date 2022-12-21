@@ -230,13 +230,13 @@ public class GameBoard {
         int alertHeight = DrawUtils.getMessageHeight("Won", alertFont, g);
 
         if (won) {
-            g.drawString("Reach 2048! Congratulations! 🎉", logoWidth + 20, rectY + rHeight + alertHeight + 10);
-            g.drawString("Enter <ESC> for a new game.", logoWidth + 35, rectY + rHeight + alertHeight * 2 + 30);
+            g.drawString("Reach 2048! 🎉", logoWidth + 35, rectY + rHeight + alertHeight + 10);
+            g.drawString("Enter <SPACE> for a new game.", logoWidth + 35, rectY + rHeight + alertHeight * 2 + 30);
         }
 
         if (dead) {
             g.drawString("Opps, you failed. ☹", logoWidth + 35, rectY + rHeight + alertHeight + 15);
-            g.drawString("Enter <ESC> for a new game.", logoWidth + 35, rectY + rHeight + alertHeight * 2 + 30);
+            g.drawString("Enter <SPACE> for a new game.", logoWidth + 35, rectY + rHeight + alertHeight * 2 + 30);
         }
     }
 
@@ -299,29 +299,31 @@ public class GameBoard {
     }
 
     public void checkKeys() {
-        if (Keyboard.typed(KeyEvent.VK_LEFT) || Keyboard.typed(KeyEvent.VK_A)) {
-            // move tiles left
-            moveTiles(Direction.LEFT);
+        if (!won && !dead) {
+            if (Keyboard.typed(KeyEvent.VK_LEFT) || Keyboard.typed(KeyEvent.VK_A)) {
+                // move tiles left
+                moveTiles(Direction.LEFT);
 
-            if (!started) started = true;
-        }
-        if (Keyboard.typed(KeyEvent.VK_RIGHT) || Keyboard.typed(KeyEvent.VK_D)) {
-            // move tiles right
-            moveTiles(Direction.RIGHT);
+                if (!started) started = true;
+            }
+            if (Keyboard.typed(KeyEvent.VK_RIGHT) || Keyboard.typed(KeyEvent.VK_D)) {
+                // move tiles right
+                moveTiles(Direction.RIGHT);
 
-            if (!started) started = true;
-        }
-        if (Keyboard.typed(KeyEvent.VK_UP) || Keyboard.typed(KeyEvent.VK_W)) {
-            // move tiles up
-            moveTiles(Direction.UP);
+                if (!started) started = true;
+            }
+            if (Keyboard.typed(KeyEvent.VK_UP) || Keyboard.typed(KeyEvent.VK_W)) {
+                // move tiles up
+                moveTiles(Direction.UP);
 
-            if (!started) started = true;
-        }
-        if (Keyboard.typed(KeyEvent.VK_DOWN) || Keyboard.typed(KeyEvent.VK_S)) {
-            // move tiles down
-            moveTiles(Direction.DOWN);
+                if (!started) started = true;
+            }
+            if (Keyboard.typed(KeyEvent.VK_DOWN) || Keyboard.typed(KeyEvent.VK_S)) {
+                // move tiles down
+                moveTiles(Direction.DOWN);
 
-            if (!started) started = true;
+                if (!started) started = true;
+            }
         }
     }
 
