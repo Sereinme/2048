@@ -7,6 +7,7 @@ public class Main {
 
         JFrame window = new JFrame("2048");
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        window.setUndecorated(true);
         window.setResizable(false);
         window.add(game);
         window.pack();

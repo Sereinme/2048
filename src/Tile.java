@@ -20,12 +20,14 @@ public class Tile {
     private int x;
     private int y;
     private Point slideTo;
-    private boolean canCombine;
+    private boolean canCombine = true;
+    private boolean beginningAnimation = true;
 
-    public Tile(int value, int x, int y) {
+   public Tile(int value, int x, int y) {
         this.value = value;
         this.x = x;
         this.y = y;
+        this.slideTo = new Point(x, y);
         tileImage = new BufferedImage(WIDTH,HEIGHT,BufferedImage.TYPE_INT_ARGB);
         drawImage();
     }
@@ -82,6 +84,7 @@ public class Tile {
 
     public void setValue(int value) {
         this.value = value;
+        drawImage();
     }
 
     public boolean canCombine() {
@@ -99,4 +102,21 @@ public class Tile {
     public void setSlideTo(Point slideTo) {
         this.slideTo = slideTo;
     }
+
+    public int getX() {
+        return x;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
 }
