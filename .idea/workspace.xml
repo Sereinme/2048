@@ -9,9 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be4568c8-783c-41fb-a89d-fdbbc174b20f" name="变更" comment="Add animation">
+    <list default="true" id="be4568c8-783c-41fb-a89d-fdbbc174b20f" name="变更" comment="Project complete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameBoard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +62,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JAR 应用程序.game2048.jar">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="game2048" />
@@ -71,8 +70,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="game2048.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/game2048_jar/game2048.jar" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JAR 应用程序.game2048.jar" />
         <item itemvalue="应用程序.Main" />
       </list>
     </recent_temporary>
@@ -93,6 +97,9 @@
       <workItem from="1671628044681" duration="7043000" />
       <workItem from="1671640193306" duration="345000" />
       <workItem from="1671640551197" duration="24000" />
+      <workItem from="1671640592821" duration="861000" />
+      <workItem from="1671697787251" duration="383000" />
+      <workItem from="1671698185435" duration="789000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1671507682183</created>
@@ -143,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671633624881</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Project complete">
+      <created>1671640625664</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1671640625664</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +182,18 @@
     <MESSAGE value="game logic move" />
     <MESSAGE value="Game finish without animation" />
     <MESSAGE value="Add animation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add animation" />
+    <MESSAGE value="Project complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project complete" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GameBoard.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

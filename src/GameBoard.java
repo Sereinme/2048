@@ -39,7 +39,11 @@ public class GameBoard {
 
     public GameBoard(int x, int y) {
         try {
-            saveDataPath = GameBoard.class.getProtectionDomain().getCodeSource().getLocation().toURI().getPath();
+            saveDataPath = this.getClass().getProtectionDomain().getCodeSource().getLocation().toURI().getPath();
+            if (saveDataPath.contains(".jar")) {
+                int se = saveDataPath.lastIndexOf("/");
+                saveDataPath = saveDataPath.substring(0, se);
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
