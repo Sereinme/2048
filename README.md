@@ -11,7 +11,11 @@ You can press `<ESC>` at any time to exit the game. And press `<SPACE>` when gam
 
 ## Code Structure
 
-![](./images/overview.pdf)
+<object data="./images/overview.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="./images/overview.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="./images/overview.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
 
 ## Reference
 
