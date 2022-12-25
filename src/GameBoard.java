@@ -90,14 +90,14 @@ public class GameBoard {
         }
     }
 
-    private void setHighScore() {
+    public void setHighScore() {
        FileWriter output = null;
 
        try {
            File f = new File(saveDataPath, fileName);
            output = new FileWriter(f);
            BufferedWriter writer = new BufferedWriter(output);
-           writer.write("" + highScore);
+           writer.write("" + Math.max(highScore, score));
            writer.newLine();
            if (elapsedMS <= fastestMS && won) {
                writer.write("" + elapsedMS);
@@ -184,7 +184,7 @@ public class GameBoard {
 
 
         // score and time
-        int rectX = 230;
+        int rectX = 220;
         int rectY = 20;
         int scoreWidth = DrawUtils.getMessageWidth("" + score, scoreFont, g);
         int scoreHeight = DrawUtils.getMessageHeight("" + score, scoreFont, g);
@@ -192,13 +192,13 @@ public class GameBoard {
         int highScoreHeight = DrawUtils.getMessageHeight("" + highScore, scoreFont, g);
         int textWidth = DrawUtils.getMessageWidth("SCORE", scoreFont.deriveFont(12f), g);
         int textHeight = DrawUtils.getMessageHeight("SCORE", scoreFont.deriveFont(12f), g);
-        int rWidth = (Math.max(scoreWidth, textWidth)) + 30;
+        int rWidth = (Math.max(scoreWidth, textWidth)) + 20;
         int rHeight = scoreHeight + textHeight + 30;
-        int rWidthHigh = (Math.max(highScoreWidth, textWidth)) + 30;
+        int rWidthHigh = (Math.max(highScoreWidth, textWidth)) + 20;
         int rHeightHigh = highScoreHeight + textHeight + 30;
         int timeWidth = DrawUtils.getMessageWidth(formattedTime, scoreFont, g);
         int timeHeight = DrawUtils.getMessageHeight(formattedTime, scoreFont, g);
-        int rTimeWidth = (Math.max(timeWidth, textWidth)) + 30;
+        int rTimeWidth = (Math.max(timeWidth, textWidth)) + 20;
         int rTimeHeight = timeHeight + textHeight + 30;
         g.setColor(new Color(87,74, 62));
         g.fillRoundRect(rectX, rectY, rWidth, rHeight, 10,10);

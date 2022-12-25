@@ -9,8 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be4568c8-783c-41fb-a89d-fdbbc174b20f" name="变更" comment="Project complete">
+    <list default="true" id="be4568c8-783c-41fb-a89d-fdbbc174b20f" name="变更" comment="fix bug &quot;wrong file path in jar&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameBoard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +100,7 @@
       <workItem from="1671640551197" duration="24000" />
       <workItem from="1671640592821" duration="861000" />
       <workItem from="1671697787251" duration="383000" />
-      <workItem from="1671698185435" duration="789000" />
+      <workItem from="1671698185435" duration="8044000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1671507682183</created>
@@ -157,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671640625664</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix bug &quot;wrong file path in jar&quot;">
+      <created>1671699143934</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1671699143934</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,17 +191,7 @@
     <MESSAGE value="Game finish without animation" />
     <MESSAGE value="Add animation" />
     <MESSAGE value="Project complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project complete" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/GameBoard.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="fix bug &quot;wrong file path in jar&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug &quot;wrong file path in jar&quot;" />
   </component>
 </project>

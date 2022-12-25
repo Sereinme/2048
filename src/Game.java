@@ -35,8 +35,10 @@ public class Game extends JPanel implements KeyListener,Runnable {
                 board = new GameBoard(WIDTH / 2 - GameBoard.BOARD_WIDTH / 2, HEIGHT - GameBoard.BOARD_HEIGHT - 10);
             }
         }
-        if (Keyboard.typed(KeyEvent.VK_ESCAPE))
+        if (Keyboard.typed(KeyEvent.VK_ESCAPE)) {
+            board.setHighScore();
             System.exit(0);
+        }
         board.update();
         Keyboard.update();
     }
